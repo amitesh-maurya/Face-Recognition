@@ -25,7 +25,7 @@ A modular, research-driven face **detection & recognition** system with plug-and
 
 ## Demo (Gradio)
 ```bash
-python app/gradio_app.py
+python face-recognition-pipeline/app.py
 # then open the printed local URL in your browser
 ```
 **You can:**
