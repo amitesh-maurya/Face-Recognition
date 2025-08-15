@@ -92,22 +92,22 @@ python scripts/build_embeddings.py \
 ## Project Structure
 ```
 face-recognition-pipeline/
-├─ app/
-│  └─ gradio_app.py            # Web UI (image upload + webcam + detector dropdown)
+│  app.py
+│  requirements.txt
+│
 ├─ core/
-│  ├─ detectors/               # opencv_haar.py, mtcnn.py, dlib_hog.py, dlib_cnn.py, fr_detector.py
-│  ├─ encoders/                # dlib_resnet.py
-│  ├─ matchers/                # cosine.py, euclidean.py
-│  ├─ utils/                   # drawing, I/O, timing, config
-│  └─ pipeline.py              # Orchestrates detect → encode → match
-├─ scripts/                    # CLI entrypoints for common workflows
-├─ data/
-│  ├─ known/                   # training/known identities (per-person folders)
-│  └─ embeddings/              # serialized embeddings DB (.pkl)
-├─ assets/                     # sample images/videos
-├─ tests/                      # unit tests
-├─ requirements.txt
-└─ README.md
+│   ├─ __init__.py
+│   ├─ config.py
+│   ├─ logging_crypto.py
+│   ├─ gallery.py
+│   ├─ face_utils.py
+│   ├─ match.py
+│   └─ pipeline.py
+│
+└─ ui/
+    ├─ __init__.py
+    └─ gradio_ui.py
+
 ```
 
 ---
