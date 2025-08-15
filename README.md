@@ -41,7 +41,7 @@ python app/gradio_app.py
 ### 1) Create env & install deps
 ```bash
 # clone
-git clone https://github.com/your-username/face-recognition-pipeline.git
+git clone https://github.com/amitesh-maurya/face-recognition-pipeline.git
 cd face-recognition-pipeline
 
 # (optional) create venv
@@ -223,7 +223,7 @@ If this repo helped your research/product, consider citing:
   author = {Maurya, Amitesh},
   title = {Modular Face Recognition Pipeline with Gradio UI},
   year = {2025},
-  url = {https://github.com/your-username/face-recognition-pipeline}
+  url = {https://github.com/amitesh-maurya/face-recognition-pipeline}
 }
 ```
 
